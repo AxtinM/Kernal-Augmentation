@@ -1,2 +1,3 @@
 # Kernal-Augmentation
-Checking first access to the repos
+Checking first access to the repositoryœ:wq
+
