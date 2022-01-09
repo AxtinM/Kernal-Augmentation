@@ -65,5 +65,16 @@ rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y --os=ubuntu:focal
 
 cd ~/ros2_foxy/
-colcon build --symlink-install
+#I think the stderr output you see is because you don't have 
+#Connext or OpenSplice installed (which is fine).
+#so the build instructions recommend ignoring them with the following command:
+#
+#
+#
+#
+colcon build --symlink-install --packages-ignore qt_gui_cpp rqt_gui_cpp
+#
+#
+
+#colcon build --symlink-install
 
